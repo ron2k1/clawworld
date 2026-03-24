@@ -1,0 +1,9 @@
+export const {{ agentId }} = {
+  agentId: "{{ agentId }}",
+  name: "{{ name }}",
+  map: "{{ map }}",
+  tileX: {{ tileX }},
+  tileY: {{ tileY }},
+  facing: "{{ facing }}",
+  portrait: "{{ portrait | default(agentId ~ '.png') }}",
+};

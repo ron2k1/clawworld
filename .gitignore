@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+*.egg-info/
+__pycache__/
+*.pyc
+
+# Secrets
+.env
+.venv/
+venv/
+
+# Build
+dist/
+build/
+*.tsbuildinfo
+
+# Environment
+.env
+.env.local
+
+# Gateway runtime
+gateway/sessions/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Compiled JS in src (use .ts/.tsx only)
+src/**/*.js

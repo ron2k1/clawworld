@@ -1,0 +1,208 @@
+{
+  "agents": {
+    "list": [
+      {
+        "id": "assistant",
+        "name": "Personal Assistant",
+        "workspace": "workspaces/assistant",
+        "model": {
+          "primary": "xai/grok-3"
+        },
+        "tools": {
+          "allow": [
+            "ask_agent"
+          ]
+        }
+      },
+      {
+        "id": "analyst",
+        "name": "Senior Analyst",
+        "workspace": "workspaces/analyst",
+        "model": {
+          "primary": "anthropic/claude-sonnet-4-6"
+        },
+        "tools": {
+          "deny": [
+            "exec",
+            "write",
+            "browser",
+            "canvas"
+          ]
+        }
+      },
+      {
+        "id": "coder",
+        "name": "The Coder",
+        "workspace": "workspaces/coder",
+        "model": {
+          "primary": "anthropic/claude-opus-4-6[1m]"
+        },
+        "tools": {
+          "allow": [
+            "read",
+            "exec"
+          ],
+          "deny": [
+            "browser",
+            "canvas"
+          ]
+        }
+      },
+      {
+        "id": "lorekeeper",
+        "name": "The Elder",
+        "workspace": "workspaces/lorekeeper",
+        "model": {
+          "primary": "anthropic/claude-opus-4-6"
+        },
+        "tools": {
+          "deny": [
+            "exec",
+            "write",
+            "browser",
+            "canvas"
+          ]
+        }
+      },
+      {
+        "id": "trader",
+        "name": "Mysterious Trader",
+        "workspace": "workspaces/trader",
+        "model": {
+          "primary": "anthropic/claude-haiku-4-5-20251001"
+        },
+        "tools": {
+          "deny": [
+            "exec",
+            "write",
+            "browser",
+            "canvas"
+          ]
+        }
+      },
+      {
+        "id": "jake",
+        "name": "The Blacksmith",
+        "workspace": "workspaces/jake",
+        "model": {
+          "primary": "ollama/qwen3:4b"
+        },
+        "tools": {
+          "allow": [
+            "read",
+            "exec",
+            "web_fetch"
+          ],
+          "deny": [
+            "browser",
+            "canvas"
+          ]
+        }
+      },
+      {
+        "id": "tom",
+        "name": "The Planner",
+        "workspace": "workspaces/tom",
+        "model": {
+          "primary": "ollama/qwen3:4b"
+        },
+        "tools": {
+          "allow": [
+            "read",
+            "exec",
+            "web_fetch"
+          ],
+          "deny": [
+            "browser",
+            "canvas"
+          ]
+        }
+      },
+      {
+        "id": "mira",
+        "name": "The Innkeeper",
+        "workspace": "workspaces/mira",
+        "model": {
+          "primary": "ollama/qwen3:4b"
+        },
+        "tools": {
+          "allow": [
+            "read",
+            "exec",
+            "web_fetch"
+          ],
+          "deny": [
+            "browser",
+            "canvas"
+          ]
+        }
+      },
+      {
+        "id": "inspector",
+        "name": "Code Inspector",
+        "workspace": "workspaces/inspector",
+        "model": {
+          "primary": "openai/codex",
+          "runner": "subprocess"
+        },
+        "runner": {
+          "type": "subprocess",
+          "command": "inspector --print",
+          "timeout": 300
+        },
+        "tools": {
+          "allow": [
+            "exec",
+            "read",
+            "write"
+          ],
+          "deny": [
+            "browser",
+            "canvas"
+          ]
+        }
+      },
+      {
+        "id": "debugger",
+        "name": "Code Debugger",
+        "workspace": "workspaces/debugger",
+        "model": {
+          "primary": "openai/codex",
+          "runner": "subprocess"
+        },
+        "runner": {
+          "type": "subprocess",
+          "command": "debugger --print",
+          "timeout": 300
+        },
+        "tools": {
+          "allow": [
+            "exec",
+            "read",
+            "write"
+          ],
+          "deny": [
+            "browser",
+            "canvas"
+          ]
+        }
+      },
+      {
+        "id": "hermes-agent",
+        "name": "Hermes",
+        "workspace": "workspaces/hermes-agent",
+        "model": {
+          "primary": "ollama/nous-hermes2"
+        },
+        "tools": {
+          "deny": [
+            "exec",
+            "write",
+            "browser",
+            "canvas"
+          ]
+        }
+      }
+    ]
+  }
+}
