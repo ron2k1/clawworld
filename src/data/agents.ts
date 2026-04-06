@@ -82,7 +82,6 @@ export const npcRegistry: NPCConfig[] = [
     portraitUrl: '/sprites/npcs/mira/sprite.png',
   },
   {
-  {
     agentId: 'inspector',
     name: 'Code Inspector',
     map: 'analyst-office',
@@ -100,7 +99,6 @@ export const npcRegistry: NPCConfig[] = [
     facing: 'right',
     portraitUrl: '/sprites/npcs/debugger/sprite.png',
   },
-  {
   {
     agentId: 'hermes-agent',
     name: 'Hermes',
