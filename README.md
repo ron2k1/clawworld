@@ -1,5 +1,7 @@
 # ClawWorld
 
+[![GitTok — vertical demo videos of finished GitHub projects](https://dev.gittok.net/og/readme-card.svg)](https://dev.gittok.net/feed)
+
 A visual frontend for [OpenClaw](https://github.com/ron2k1/openclaw) -- a multi-agent orchestration platform. Instead of a terminal or chat UI, ClawWorld renders your agent roster as characters in a tile-based world. Walk up to an agent, talk to it, and it streams responses in real time. Agents consult each other mid-conversation via `ask_agent()` delegation.
 
 ## What makes this interesting
